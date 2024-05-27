@@ -211,11 +211,16 @@
     #set text(14pt)
     #block(smallcaps(it.body))
   ]
+  // make links blue
+  show link: set text(fill: rgb(0, 0, 238))
+
+  // underline links
+  show link: underline
 
   // Main body.
   set par(justify: true)
   set heading(numbering: "1.1")
-  counter(page).update(1)
+  counter(page).update(0)
   set page(header: getHeader())
   set page(numbering: "1", number-align: center)
   body
